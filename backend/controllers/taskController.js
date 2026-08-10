@@ -54,9 +54,16 @@ export const updateTask = async (req, res) => {
     try {
         const data = { ...req.body };
 
-       if (data.completed !== undefined) {
-    data.completed = Boolean(data.completed);
+      if (data.completed !== undefined) {
+  data.completed =
+    data.completed === true ||
+    data.completed === "true" ||
+    data.completed === "yes" ||
+    data.completed === "Yes" ||
+    data.completed === 1 ||
+    data.completed === "1";
 }
+
         const updated = await Task.findOneAndUpdate(
             { _id: req.params.id, owner: req.user.id },
             data,

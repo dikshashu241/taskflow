@@ -31,21 +31,24 @@ const TaskItem = ({task,onLogout,onRefresh,showCompleteCheckbox=true }) => {
 
   const borderColor=isCompleted?"border-green-500":getPriorityColor(task.priority).split(" ")[0]
 
-  const handleComplete=async()=>{
-    const newStatus=isCompleted?'No':'Yes'
-    try {
-      await axios.put(`${API_BASE}/${task.id}/gp`,{completed:newStatus},
-        {headers:getAuthHeaders()}
-      )
-      setIsCompleted(!isCompleted)
-      onRefresh?.()
-    } catch (err) {
-      console.log(err)
-      if(err.response?.status===401)onLogout?.()
+  const handleComplete = async () => {
+  try {
+    await axios.put(
+      `${API_BASE}/${task._id}/gp`,
+      { completed: !isCompleted },
+      { headers: getAuthHeaders() }
+    );
+
+    setIsCompleted(!isCompleted);
+    onRefresh?.();
+  } catch (err) {
+    console.log(err);
+
+    if (err.response?.status === 401) {
+      onLogout?.();
     }
   }
-  
-
+};
   const handleAction=(action)=>{
     setShowMenu(false)
     if(action==='edit' )setShowEditmodal(true)
