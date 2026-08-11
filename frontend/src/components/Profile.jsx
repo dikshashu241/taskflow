@@ -107,8 +107,8 @@ useEffect(() => {
 
                 </div>
                 <div >
-                    <h1 className='text-3xl font-bold text-gray-800'>Account Setting</h1>
-                    <p className='text-gray-500 text-sm '>Manage Your Profile And Security Settings</p>
+                    <h1 className='text-3xl font-bold text-gray-800'>Account Settings</h1>
+                    <p className='text-gray-500 text-sm '>Manage your profile and security settings</p>
                 </div>
             </div>
             <div className='grid md:grid-cols-2 gap-8'>

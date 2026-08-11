@@ -41,10 +41,10 @@ const PendingPage = () => {
       <div className={layoutClasses.headerWrapper}>
         <div>
           <h1 className='text-2xl  md:text-3xl font-bold  text-gray-800 flex items-center gap-2'>
-            <ListCheck className='text-purple-500'/>PendingTask
+            <ListCheck className='text-purple-500'/>Pending Tasks
           </h1>
           <p className='text-sm text-gray-500 mt-1  ml-7'>
-            {sortedPendingTasks.length}task{sortedPendingTasks.length !==1 &&'s'}{' '}
+            {sortedPendingTasks.length} task{sortedPendingTasks.length !==1 &&'s'}{' '}
             needing your attention
           </p>
         </div>

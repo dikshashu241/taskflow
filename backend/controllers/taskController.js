@@ -54,8 +54,7 @@ export const updateTask = async (req, res) => {
     try {
         const data = { ...req.body };
 
-     const data = { ...req.body };
-
+    
 if (data.completed !== undefined) {
   data.completed =
     data.completed === "yes" || data.completed === true;

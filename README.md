@@ -1,72 +1,87 @@
 # TaskFlow 🚀
 
-A full-stack task management application built with the MERN stack to help users organize, track, and manage their daily tasks efficiently.
+A full-stack task management application built with the MERN stack that helps users create, organize, track, and manage their tasks efficiently.
 
 ## ✨ Features
 
 ### 🔐 Authentication
-
-* User Signup and Login
-* JWT-based authentication
-* Protected routes
-* User profile management
+- User registration and login
+- JWT-based authentication
+- Protected routes
+- User profile management
 
 ### 📋 Task Management
-
-* Create new tasks
-* Edit existing tasks
-* Delete tasks
-* Mark tasks as completed
-* Track pending and completed tasks
+- Create tasks
+- Edit tasks
+- Delete tasks
+- Mark tasks as completed
+- Track pending and completed tasks
 
 ### 🎯 Task Organization
-
-* Low, Medium, and High priority
-* Due date management
-* Task filtering
-* Separate pending and completed task views
+- Low, Medium, and High priority
+- Due date management
+- Task sorting
+- Task filtering
+- Separate Pending and Completed task views
 
 ### 📊 Dashboard
+- Total task statistics
+- Pending task statistics
+- Completed task statistics
+- Priority-based task statistics
+- Recent activity tracking
+- Productivity overview
 
-* Total tasks
-* Pending tasks
-* Completed tasks
-* Priority-based task statistics
-
-### 👤 Profile
-
-* User profile
-* Manage account information
+### 👤 Account Management
+- View and update profile information
+- Change password
+- Secure logout
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
-* React.js
-* JavaScript
-* HTML5
-* CSS3
-* Bootstrap / Tailwind CSS
+- React.js
+- JavaScript
+- HTML5
+- CSS3
 
 ### Backend
-
-* Node.js
-* Express.js
-* REST APIs
-* JWT Authentication
+- Node.js
+- Express.js
+- REST API
+- JWT Authentication
 
 ### Database
-
-* MongoDB
-* Mongoose
+- MongoDB
+- Mongoose
 
 ### Tools
+- Git
+- GitHub
+- VS Code
+- Thunder Client
 
-* Git
-* GitHub
-* VS Code
-* Thunder Client / Postman
+## 📸 Screenshots
 
+### Dashboard
+
+![TaskFlow Dashboard](./screenshots/dashboard.png)
+
+### Create New Task
+
+![Create New Task](./screenshots/create-task.png)
+
+### Pending Tasks
+
+![Pending Tasks](./screenshots/pending-tasks.png)
+
+### Completed Tasks
+
+![Completed Tasks](./screenshots/completed-tasks.png)
+
+### Account Settings
+
+![Account Settings](./screenshots/account-settings.png)
 ## 📁 Project Structure
 
 ```text
@@ -83,76 +98,17 @@ TaskFlow/
 ├── frontend/
 │   ├── public/
 │   └── src/
+│       ├── assets/
 │       ├── components/
 │       ├── pages/
-│       ├── assets/
 │       ├── App.jsx
 │       └── main.jsx
 │
+├── screenshots/
+│   ├── dashboard.png
+│   ├── create-task.png
+│   ├── pending-tasks.png
+│   └── completed-tasks.png
+│
 ├── .gitignore
 └── README.md
-```
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/dikshashu241/taskflow.git
-cd taskflow
-```
-
-### 2. Backend Setup
-
-```bash
-cd backend
-npm install
-```
-
-Create a `.env` file:
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-```
-
-Start the backend:
-
-```bash
-npm run dev
-```
-
-### 3. Frontend Setup
-
-Open another terminal:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-## 🔒 Security
-
-* Passwords are securely hashed
-* JWT is used for authentication
-* Protected API routes restrict unauthorized access
-* Environment variables are used for sensitive configuration
-
-## 📸 Screenshots
-
-Screenshots of the application will be added here.
-
-## 🌐 Live Demo
-
-Coming soon.
-
-## 👩‍💻 Author
-
-**Diksha Sahu**
-
-MERN Stack Developer
-
-* GitHub: https://github.com/dikshashu241
-* LinkedIn: https://www.linkedin.com/in/diksha-sahu-1a431b3b9/
