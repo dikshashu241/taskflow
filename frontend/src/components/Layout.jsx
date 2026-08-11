@@ -34,11 +34,11 @@ const Layout = ({ onLogout, user }) => {
     }
 
     try {
-  const { data } = await axios.get(
-    "https://taskflow-backend-p23i.onrender.com/api/tasks/gp",
-    { headers: { Authorization: `Bearer ${token}` } }
-  )
-}
+      const { data } = await axios.get(
+       "https://taskflow-backend-p23i.onrender.com/api/tasks/gp",
+        { headers: { Authorization: `Bearer ${token}` } }
+      )
+
       const arr = Array.isArray(data)
         ? data
         : Array.isArray(data?.tasks)
