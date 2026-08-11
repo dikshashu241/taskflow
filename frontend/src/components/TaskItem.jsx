@@ -5,7 +5,7 @@ import axios from 'axios'
 import{format, isToday} from 'date-fns'
 import TaskModal from './TaskModal'
 
-const API_BASE = "http://localhost:4000/api/tasks"
+const API_BASE = "https://taskflow-backend-p23i.onrender.com/api/tasks";
 
 
 const TaskItem = ({task,onLogout,onRefresh,showCompleteCheckbox=true }) => {

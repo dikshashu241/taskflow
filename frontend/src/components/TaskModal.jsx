@@ -2,7 +2,7 @@ import React, { useEffect, useState,useCallback } from "react";
 import { baseControlClasses, DEFAULT_TASK, priorityStyles } from "../assets/dummy";
 import { AlignLeft,PlusCircle,X,Flag,Calendar, CheckCircle ,Save} from "lucide-react";
 
-const API_BASE = "http://localhost:4000/api/tasks";
+const API_BASE = "https://taskflow-backend-p23i.onrender.com/api/tasks";
 
 const TaskModal = ({ isOpen, onClose, taskToEdit, onSave, onLogout }) => {
   const [taskData, setTaskData] = useState(DEFAULT_TASK);
