@@ -1,114 +1,138 @@
-# TaskFlow 🚀
+# 🚀 TaskFlow - Task Management Application
 
-A full-stack task management application built with the MERN stack that helps users create, organize, track, and manage their tasks efficiently.
+TaskFlow is a full-stack task management application built using the MERN stack. It allows users to securely register, log in, create and manage tasks, update task status, and organize their daily work efficiently.
+
+## 🌐 Live Demo
+
+🔗 https://taskflow-gnut.onrender.com
+
+## 📂 GitHub Repository
+
+🔗 https://github.com/dikshashu241/taskflow
+
+---
 
 ## ✨ Features
 
-### 🔐 Authentication
-- User registration and login
-- JWT-based authentication
-- Protected routes
-- User profile management
+- 🔐 User Registration & Login
+- 🔒 JWT-based Authentication
+- 📝 Create, Edit and Delete Tasks
+- ✅ Mark Tasks as Completed
+- ⏳ Manage Pending Tasks
+- 🎯 Task Priority Management
+- 👤 User Profile Management
+- 📊 Dashboard for Task Overview
+- 📱 Responsive User Interface
+- 🔄 Real-time task data fetching through REST APIs
 
-### 📋 Task Management
-- Create tasks
-- Edit tasks
-- Delete tasks
-- Mark tasks as completed
-- Track pending and completed tasks
-
-### 🎯 Task Organization
-- Low, Medium, and High priority
-- Due date management
-- Task sorting
-- Task filtering
-- Separate Pending and Completed task views
-
-### 📊 Dashboard
-- Total task statistics
-- Pending task statistics
-- Completed task statistics
-- Priority-based task statistics
-- Recent activity tracking
-- Productivity overview
-
-### 👤 Account Management
-- View and update profile information
-- Change password
-- Secure logout
+---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
 - React.js
 - JavaScript
-- HTML5
-- CSS3
+- Tailwind CSS
+- React Router
+- Axios
+- Lucide React
+- Date-fns
 
 ### Backend
 - Node.js
 - Express.js
-- REST API
-- JWT Authentication
-
-### Database
 - MongoDB
 - Mongoose
+- JWT Authentication
+- bcrypt
+- REST APIs
 
 ### Tools
 - Git
 - GitHub
 - VS Code
-- Thunder Client
+- Render
+- MongoDB
+
+---
 
 ## 📸 Screenshots
 
-### Dashboard
+### 🔐 Login
 
-![TaskFlow Dashboard](./screenshots/dashboard.png)
+![TaskFlow Login](screenshots/login.png)
 
-### Create New Task
+### 📝 Dashboard
 
-![Create New Task](./screenshots/create-task.png)
+![TaskFlow Dashboard](screenshots/dashboard.png)
 
-### Pending Tasks
+### ➕ Create Task
 
-![Pending Tasks](./screenshots/pending-tasks.png)
+![Create Task](screenshots/create-task.png)
 
-### Completed Tasks
+### ⏳ Pending Tasks
 
-![Completed Tasks](./screenshots/completed-tasks.png)
+![Pending Tasks](screenshots/pending.png)
 
-### Account Settings
+### ✅ Completed Tasks
 
-![Account Settings](./screenshots/account-settings.png)
-## 📁 Project Structure
+![Completed Tasks](screenshots/completed.png)
+
+### 👤 Profile
+
+![User Profile](screenshots/profile.png)
+
+---
+
+## 🔑 Authentication
+
+TaskFlow uses JWT-based authentication to protect user-specific data.
+
+The authentication flow includes:
+
+1. User registration
+2. Secure password hashing
+3. User login
+4. JWT token generation
+5. Token-based authorization
+6. Protected API routes
+
+---
+
+## 📋 Task Management
+
+Users can:
+
+- Create new tasks
+- Add task descriptions
+- Set task priority
+- Set task deadlines
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as completed
+- View pending tasks
+- View completed tasks
+
+---
+
+## 📊 Dashboard
+
+The dashboard provides users with an overview of their tasks and allows them to quickly access task-related functionality.
+
+Users can easily navigate between:
+
+- All Tasks
+- Pending Tasks
+- Completed Tasks
+- Profile
+
+---
+
+## ⚙️ API Integration
+
+The frontend communicates with the Node.js/Express backend using REST APIs and Axios.
+
+### Backend API
 
 ```text
-TaskFlow/
-│
-├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   └── server.js
-│
-├── frontend/
-│   ├── public/
-│   └── src/
-│       ├── assets/
-│       ├── components/
-│       ├── pages/
-│       ├── App.jsx
-│       └── main.jsx
-│
-├── screenshots/
-│   ├── dashboard.png
-│   ├── create-task.png
-│   ├── pending-tasks.png
-│   └── completed-tasks.png
-│
-├── .gitignore
-└── README.md
+https://taskflow-backend-p23i.onrender.com
